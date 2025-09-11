@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Target, Users, BookOpen } from "lucide-react";
+import { Link } from "react-router-dom";
 import AuthModal from "@/components/AuthModal";
 
 const HeroSection = () => {
@@ -34,9 +35,11 @@ const HeroSection = () => {
                 <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
               </Button>
             </AuthModal>
-            <Button variant="outline" size="lg" className="text-base px-8 py-3">
-              Take Career Quiz
-            </Button>
+            <Link to="/quiz">
+              <Button variant="outline" size="lg" className="text-base px-8 py-3">
+                Take Career Quiz
+              </Button>
+            </Link>
           </div>
 
           {/* Feature highlights */}
