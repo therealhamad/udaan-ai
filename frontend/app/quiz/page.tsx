@@ -9,6 +9,7 @@ import { Badge } from "@/components/ui/badge";
 import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group";
 import { Label } from "@/components/ui/label";
 import { CheckCircle, ArrowRight, RotateCcw } from "lucide-react";
+import CareerRoadmap from "@/components/CareerRoadmap";
 
 interface Question {
   id: number;
@@ -220,6 +221,11 @@ export default function QuizPage() {
               </div>
             </CardContent>
           </Card>
+
+          {/* Career Roadmap Section */}
+          <div className="mt-8">
+            <CareerRoadmap stream={recommendedStream} />
+          </div>
         </div>
       </div>
     );
